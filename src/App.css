@@ -1,6 +1,5 @@
 .body{
   background-color: #30363b;
-  /* height: 100vh; */
   position: relative;
 }
 .nav{
@@ -41,7 +40,6 @@
 .description .about-app{
   height: 65vh;
   width: 40%;
-  /* border: 2px red solid; */
   position: relative;
   margin-top: 5%;
   margin-left: 2%;
@@ -56,14 +54,12 @@
   width: 70%;
   position: absolute;
   left: 18%;
-  /* border: 2px red solid; */
   font-family: 'Quantico', sans-serif;
   text-align: center;
   font-size: 25px;
   color: #f48915;
 }
 .description .about-app .started{
-    /* border: 2px red solid; */
     position: absolute;
     top: 80%;
     left: 50%;
@@ -80,7 +76,6 @@
 .image{
   height: 65vh;
   width: 45%;
-  /* border: 2px red solid; */
   position: absolute;
   top: 18%;
   left: 50%;
@@ -115,7 +110,6 @@
   display: inline-block;
   height: 40px;
   width: 40px;
-  /* float: left; */
   margin: 0 5px;
   overflow: hidden;
   background: #f48915;
@@ -177,13 +171,9 @@
   color: #ff0000;
 }
 .project{
-  /* border: 2px red solid; */
-  height: 100%;
   width: 99%;
 }
 .title{
-  color: #ff0000;
-  font-family: 'Signika Negative', sans-serif;
   font-size: 50px !important;
 }
 .alert{
@@ -194,8 +184,30 @@
   font-family: 'Signika Negative', sans-serif;
 }
 .test{
-  background-color: #f48915 !important;
+  background-color: rgb(61, 221, 221) !important;
   border: none !important;
+  color: white !important;
+}
+.add{
+  background-color: #f48915 !important;
+  border-radius: 3px !important;
+  margin: 1%;
+  color: white !important;
+}
+.edit{
+  background-color: #f48915 !important;
+  color: white !important;
+}
+.col{
+  margin-left: 1%;
+}
+.card{
+  background-color: #30363b !important;
+  border: none !important;
+  box-shadow: 10px 10px 15px rgb(78, 75, 75);
+  color: white;
+  font-family: 'Signika Negative', sans-serif;
+  margin-top: 5%;
 }
 .profile{
   color: white;

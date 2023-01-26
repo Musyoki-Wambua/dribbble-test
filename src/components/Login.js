@@ -33,7 +33,8 @@ function LoginModal() {
   return (
     <>
       <Button className='test' onClick={handleShow}>
-        Sign In
+        Get Started
+        <i class="fa-solid fa-right-long"></i>
       </Button>
 
       <Modal show={show} onHide={handleClose}>

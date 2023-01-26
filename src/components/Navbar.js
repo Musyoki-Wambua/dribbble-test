@@ -1,10 +1,7 @@
-// import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import { Form} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
-// import Profile from '../profile';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-import LoginModal from './Login';
+
 
 function NavbarCustom() {
   return (
@@ -18,10 +15,6 @@ function NavbarCustom() {
             <Nav.Link className='navitem' href="/projects">Projects</Nav.Link>
             
           </Nav>
-          <Form className="d-flex">
-            
-            <LoginModal />
-          </Form>
         </Navbar.Collapse>
     </Navbar>
   );

@@ -3,9 +3,9 @@ import { Alert, Button } from 'react-bootstrap'
 import { Card, Col, Row } from 'react-bootstrap/esm';
 import { axiosApi } from '../api/base';
 import { PROJECTS } from '../api/endpoints';
-import ProjectModal from './Project';
+import ProjectModal from '../components/Project';
 
-export default function ProjectItem() {
+export default function Projects() {
     const [show, setShow] = useState(false);
     const [isEdit, setIsEdit] = useState(false);
     const [activeProject, setActiveProject] = useState(false);
@@ -17,7 +17,8 @@ export default function ProjectItem() {
     
     const toggleModal = () => setShow(!show);
 
-    const addProject = () => {;
+    const addProject = () => {
+        setIsEdit(false);
         toggleModal()
     }
     const listProjects = async() => {
@@ -35,12 +36,12 @@ export default function ProjectItem() {
     }
   return (
     <div className='project'>
-    <Alert className='alert  m-2'>Projects</Alert>
-        <Button variant="primary mb-3" onClick={addProject}>
+    <Alert className='alert  m-3'>Projects</Alert>
+        <Button variant="mb-3" className='add' onClick={addProject}>
         Add Project
       </Button>
       <Row>
-      {projects.map((project) =><Col md='4'> <Card style={{ width: '18rem' }}>
+      {projects.map((project) =><Col md='3' className='col'> <Card style={{ width: '18rem' }} className="card">
       <Card.Img variant="top" src="https://images.prismic.io/smarttask%2F3812b538-da10-4bfb-8406-baf1413c09ef_project+report.gif?auto=compress,format" />
       <Card.Body className='text-center'>
         <Card.Title className='title'>{project.name}</Card.Title>
@@ -48,7 +49,7 @@ export default function ProjectItem() {
             '{project.description}'
         </Card.Text>
         <div className='d-flex'>
-        <Button variant="primary mr-auto" onClick={() => editProject(project)}>Edit</Button>
+        <Button variant="mr-auto" className='edit' onClick={() => editProject(project)}>Edit</Button>
         <Button variant="danger ms-auto"  onClick={() => deleteProject(project.id)}>Delete</Button>
         </div>
       </Card.Body>
