@@ -1,2 +1,2 @@
 export const BASE_URL = 'https://api.dribbble.com/v2';
-export const ACCESS_TOKEN = "aea4c7847f07fa11abe779739d3647d8fa3613ddf3fc079e7fe1f751350cd920";
+export const ACCESS_TOKEN = "56aa8f69f33e0059a795f5f2ea890a2088285f6593daa12702efdd4d939a9a8e";

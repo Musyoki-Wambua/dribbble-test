@@ -1,5 +1,5 @@
 import React from "react";
-
+import LoginModal from "./Login";
 function Landing(){
     return(
       <div className="description">
@@ -9,7 +9,7 @@ function Landing(){
              <p>Dribble, is a platform for networking and self-promotion for digital designers and creatives. It is one of the world’s leading community for creatives and designers to share their work online and grow. It serves as a design portfolio platform, jobs and recruiting portal.</p>
           </div>
           <div className="started">
-             <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get Started <i class="fa-solid fa-right-long"></i></button>
+             <LoginModal />
           </div>
         </div>
       <div className="image">

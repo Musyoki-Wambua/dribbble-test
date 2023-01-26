@@ -7,7 +7,7 @@ function Profile() {
   const [shots, setShots] = useState([]);
   const [update, setUpdates]= useState([]);
 
-  const access_token = "aea4c7847f07fa11abe779739d3647d8fa3613ddf3fc079e7fe1f751350cd920"
+  const access_token = "56aa8f69f33e0059a795f5f2ea890a2088285f6593daa12702efdd4d939a9a8e"
   const username= "Musyoki-Wambua"
   
   const getData = async () => {
@@ -66,14 +66,14 @@ function Profile() {
     <div className='profile'>
       <h1>{user.name}</h1>
       <img src={user.avatar_url} alt={user.name} className="img"/>
-      <p>{user.bio}</p>
+      {/* <p>{user.bio}</p> */}
       <h2>Shots</h2>
       <ul>
         {shots.map(shot => (
           <li key={shot.id}>
-            <img src={shot.images.normal} alt={shot.title} />
+            <img className='pro' src={shot.images.normal} alt={shot.title} />
             <p>{shot.title}</p>
-            <p>{shot.description}</p>
+            {shot.description}
           </li>
         ))}
       </ul>
