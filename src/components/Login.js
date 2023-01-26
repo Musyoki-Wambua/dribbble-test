@@ -7,8 +7,8 @@ import Modal from 'react-bootstrap/Modal';
 import { axiosApi } from '../api/base';
 import { AUTH } from '../api/endpoints';
 import { Link } from 'react-router-dom';
-import Landing from '../pages/Langing';
-import Profile from '../profile';
+import Landing from './Landing';
+import Profile from './profile';
 
 function LoginModal() {
   const [show, setShow] = useState(false);

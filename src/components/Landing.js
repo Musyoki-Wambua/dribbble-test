@@ -6,7 +6,7 @@ function Landing(){
         <div className="about-app">
           <h1>About</h1>
           <div className="about">
-             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperd</p>
+             <p>Dribble, is a platform for networking and self-promotion for digital designers and creatives. It is one of the world’s leading community for creatives and designers to share their work online and grow. It serves as a design portfolio platform, jobs and recruiting portal.</p>
           </div>
           <div className="started">
              <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get Started <i class="fa-solid fa-right-long"></i></button>

@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import { axiosApi } from '../api/base';
 import { PROJECTS } from '../api/endpoints';
 
-function ProjectModal({show, toggleModal, activeProject , isEdit, listProjects}) {
+function Project({show, toggleModal, activeProject , isEdit, listProjects}) {
   
   const [ name, setName] = useState('');
   const [ description, setDescription] = useState('');
@@ -38,7 +38,7 @@ function ProjectModal({show, toggleModal, activeProject , isEdit, listProjects})
         toggleModal();
         listProjects()
     })
-  }
+  } 
 
   return (
     <>
@@ -74,4 +74,4 @@ function ProjectModal({show, toggleModal, activeProject , isEdit, listProjects})
     </>
   );
 }
-export default ProjectModal;
+export default Project;

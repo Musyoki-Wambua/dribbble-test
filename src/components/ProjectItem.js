@@ -3,9 +3,9 @@ import { Alert, Button } from 'react-bootstrap'
 import { Card, Col, Row } from 'react-bootstrap/esm';
 import { axiosApi } from '../api/base';
 import { PROJECTS } from '../api/endpoints';
-import ProjectModal from '../components/Project';
+import ProjectModal from './Project';
 
-export default function Projects() {
+export default function ProjectItem() {
     const [show, setShow] = useState(false);
     const [isEdit, setIsEdit] = useState(false);
     const [activeProject, setActiveProject] = useState(false);
@@ -17,8 +17,7 @@ export default function Projects() {
     
     const toggleModal = () => setShow(!show);
 
-    const addProject = () => {
-        setIsEdit(false);
+    const addProject = () => {;
         toggleModal()
     }
     const listProjects = async() => {
