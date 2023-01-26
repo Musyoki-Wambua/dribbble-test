@@ -201,9 +201,9 @@
   color: white;
   text-align: center;
   font-family: 'Signika Negative', sans-serif;
-  height: 92vh;
+  height: 205vh;
   margin-top: 3%;
-  font-size: 30px;
+  font-size: 20px;
 }
 .profile .img{
   border-radius: 250px;
@@ -216,4 +216,9 @@
 }
 .profile ul{
   list-style: none;
+}
+.profile .shot{
+    background-color: #f48915 !important;
+    border: none !important;
+  
 }
