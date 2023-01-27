@@ -30,8 +30,6 @@ function Profile() {
     }
     const {data } = await axios.get("https://api.dribbble.com/v2/user/shots", config)
 
-    // const {data } = await axios.get("https://api.dribbble.com/v2/user/shots", config,setShots)
-
     setShots(data)
     return data
 
