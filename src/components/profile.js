@@ -6,7 +6,7 @@ import parse from 'html-react-parser';
 function Profile() {
   const [user, setUser] = useState([]);
   const [shots, setShots] = useState([]);
-  // const [update, setUpdates]= useState([]);
+  const [update, setUpdates]= useState([]);
 
   const access_token = "56aa8f69f33e0059a795f5f2ea890a2088285f6593daa12702efdd4d939a9a8e"
   const username= "Musyoki-Wambua"
